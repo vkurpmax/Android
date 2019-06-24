@@ -1,0 +1,12 @@
+@Override
+protected void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+    setContentView(R.layout.activity_main);
+ 
+    ...
+ 
+    if (savedInstanceState != null) {
+        String result = savedInstanceState.getString(STATE_RESULT);
+        tvResult.setText(result);
+    }
+}
