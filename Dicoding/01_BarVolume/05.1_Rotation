@@ -1,0 +1,9 @@
+private static final String STATE_RESULT = "state_result";
+ 
+...
+ 
+@Override
+protected void onSaveInstanceState(Bundle outState) {
+    super.onSaveInstanceState(outState);
+    outState.putString(STATE_RESULT, tvResult.getText().toString());
+}
